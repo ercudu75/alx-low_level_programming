@@ -12,7 +12,7 @@ int main(void)
 	int i;
 	long int first = 0;
 	long int second = 1;
-	int sum;
+	long int sum;
 
 	printf("%ld, %ld, ", first, second);
 	for (i = 2; i <= 50 ; i++)
