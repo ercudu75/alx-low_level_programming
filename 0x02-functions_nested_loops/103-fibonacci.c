@@ -11,19 +11,18 @@ int main(void)
 	long int pre = 1;
 	long int curr = 2;
 	long int next;
-	long int sum;
+	long int sum = 2;
 
 	while (curr < 4000000)
 	{
+		if (curr % 2 == 0)
+		{
+			sum += curr;
+		}
 		next = pre + curr;
 		pre = curr;
 		curr = next;
 
-		if (curr % 2 == 0)
-		{
-			/* sum = sum + curr */
-			sum += curr;
-		}
 	}
 	printf("%ld\n", sum);
 
