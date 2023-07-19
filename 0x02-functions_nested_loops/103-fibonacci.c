@@ -24,8 +24,8 @@ int main(void)
 			/* sum = sum + curr */
 			sum += curr;
 		}
-		printf("%ld\n", sum);
 	}
+	printf("%ld\n", sum);
 
 	return (0);
 }
