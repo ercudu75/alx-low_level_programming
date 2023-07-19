@@ -10,15 +10,15 @@
 int main(void)
 {
 	int i;
-	unsigned long long int first = 0;
-	unsigned long long int second = 1;
+	unsigned long int first = 0;
+	unsigned long int second = 1;
 	int sum;
 
-	printf("%llu, %llu, ", first, second);
+	printf("%lu, %lu, ", first, second);
 	for (i = 2; i <= 50 ; i++)
 	{
 		sum = first + second;
-		printf("%llu, ", sum);
+		printf("%lu, ", sum);
 		first = second;
 		second = sum;
 	}
