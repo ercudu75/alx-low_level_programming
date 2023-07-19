@@ -14,7 +14,6 @@ int main(void)
 	long int second = 1;
 	long int sum;
 
-	printf("%ld, %ld, ", first, second);
 	for (i = 2; i <= 50 ; i++)
 	{
 		sum = first + second;
