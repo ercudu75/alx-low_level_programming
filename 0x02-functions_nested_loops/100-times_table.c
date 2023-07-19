@@ -23,9 +23,11 @@ void print_times_table(int n)
 		else
 		{
 			_putchar(' ');
+			_putchar(' ');
+			_putchar(' ');
 			_putchar(r + '0');
 		}
-		_putchar(',');
+		_putchar('\n');
 		}
 	}
 }
