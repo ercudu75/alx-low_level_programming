@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_times_table - Entry point
+ * @n: The number to generate the times table for.
  * Descrption: If n is greater than 15 or less than 0 the function
  *	should not print anything
 */
@@ -16,20 +17,19 @@ void print_times_table(int n)
 		{
 			r = i * j;
 
-		if (r == 0)
+		if (j != 0)
 		{
-			_putchar(r + '0');
 			_putchar(',');
 			_putchar(' ');
-			_putchar(' ');
+			if (r < 10)
+				_putchar(' ');
+			if (r < 100)
+				_putchar(' ');
 		}
-		else
-		{
-			_putchar(r + '0');
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
-			}
+
+			_putchar(r / 100 + '0');
+			_putchar((r / 10) % 10 + '0');
+			_putchar(r % 10 + '0');
 		}
 		_putchar('\n');
 	}
