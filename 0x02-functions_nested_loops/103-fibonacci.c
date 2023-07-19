@@ -8,13 +8,12 @@
 */
 int main(void)
 {
-	long int i = 0;
 	long int pre = 1;
 	long int curr = 2;
 	long int next;
 	long int sum;
 
-	while (i < 4000000)
+	while (curr < 4000000)
 	{
 		next = pre + curr;
 		pre = curr;
