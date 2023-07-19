@@ -20,24 +20,27 @@ void print_times_table(int n)
 		if (j != 0)
 		{
 			_putchar(',');
-			if (r < 10)
-			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(r + '0');
-			}
-			if (r < 100)
-			{
-				_putchar(' ');
-				_putchar(r + '0');
-			}
-			if (r >= 100)
-			{
-				_putchar(((r / 100) % 10) + '0');
-				_putchar(((r / 10) % 10) + '0');
-				_putchar((r % 10) + '0');
-			}
-		}
+			_putchar(' ');
+
+					if (r < 10)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(r + '0');
+					}
+					else if (r < 100)
+					{
+						_putchar(' ');
+						_putchar(r / 10 + '0');
+						_putchar(r % 10 + '0');
+					}
+					else
+					{
+						_putchar(r / 100 + '0');
+						_putchar((r / 10) % 10 + '0');
+						_putchar(r % 10 + '0');
+					}
+				}
 		}
 		_putchar('\n');
 	}
