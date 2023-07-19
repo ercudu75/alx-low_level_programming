@@ -17,7 +17,7 @@ int main(void)
 	while (i < 4000000)
 	{
 		next = pre + curr;
-		prev = curr;
+		pre = curr;
 		curr = next;
 
 		if (curr % 2 == 0)
