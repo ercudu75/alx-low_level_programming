@@ -25,7 +25,7 @@ void print_triangle(int size)
 		{
 			for (j = size - i; j > 0; j--)
 			{
-				_putchar('\t');
+				_putchar(' ');
 			}
 			for (k = 0; k < i; k++)
 			{
@@ -35,3 +35,4 @@ void print_triangle(int size)
 		}
 	}
 }
+
