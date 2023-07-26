@@ -25,7 +25,7 @@ char *_strcat(char *dest, char *src)
 		length2++;
 	}
 
-	for (i = length1; i <= length1 + length2 - 1; i++)
+	for (i = length2; i < length1 + length2; i++)
 	{
 		for (j = 0; j < length1; j++)
 		{
