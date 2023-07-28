@@ -9,8 +9,8 @@
 char *leet(char *s)
 {
 	int i, j;
-	char Letters[] = {"aAeEoOtTlL"};
-	int num[5] = {4, 3, 0, 7, 1};
+	char Letters[] = "aAeEoOtTlL";
+	char num[] = "43071";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -18,7 +18,7 @@ char *leet(char *s)
 		{
 			if (s[i] == Letters[j])
 			{
-				s[i] = num[j / 2] + '0';
+				s[i] = num[j / 2];
 			}
 		}
 	}
