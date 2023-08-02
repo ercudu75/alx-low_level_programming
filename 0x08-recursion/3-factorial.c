@@ -18,7 +18,9 @@ int factorial(int n)
 	return (n * factorial(n - 1));
 }
 /**
- * Explanation of Factorial Calculation recursively
+ * factorial(5) - Calculates the factorial of a number recursively.
+ *
+ * Explanation of Factorial Calculation:
  *
  * factorial(5) = 5 * factorial(4)
  * factorial(4) = 4 * factorial(3)
