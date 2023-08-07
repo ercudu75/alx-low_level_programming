@@ -10,16 +10,16 @@
 char *_strdup(char *str)
 {
 	int length, i;
-	char *p;
+	char *p, *temp;
 
 	if (str == NULL)
 		return (NULL);
-
 	length = 0;
-	while (*str)
+	temp = str;
+	while (*temp)
 	{
 		length++;
-		str++;
+		temp++;
 	}
 	/**
 	 * The memory allocation for or a new string should
