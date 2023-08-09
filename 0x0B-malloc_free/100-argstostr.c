@@ -33,9 +33,7 @@ char *argstostr(int ac, char **av)
 			p[k++] = av[i][j];
 		}
 	if (i < ac - 1)
-	{
 		p[k++] = '\n';
-	}
 	}
 	p[k] = '\0';
 	return (p);
