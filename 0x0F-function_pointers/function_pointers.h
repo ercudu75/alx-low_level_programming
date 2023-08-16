@@ -2,6 +2,8 @@
 #define FUNCTION_POINTERS_h
 
 #include <stdlib.h>
+#include <stddef.h>
+#include <stdio.h>
 
 void print_name(char *name, void (*f)(char *));
 int _putchar(char c);
