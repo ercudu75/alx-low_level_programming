@@ -34,6 +34,7 @@ int op_mul(int a, int b)
 {
 	return (a * b);
 }
+
 /**
  * op_div - divides two integers
  * @a: int 1 to divide by int 2
