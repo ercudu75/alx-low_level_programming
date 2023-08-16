@@ -1,10 +1,15 @@
 #include "3-calc.h"
 #include<stdlib.h>
 #include<stdio.h>
-
+/**
+ * main - performs simple math operations.
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: return
+ */
 int main(int argc, char *argv[])
 {
-	int a,b;
+	int a, b;
 
 	if (argc != 4)
 	{
