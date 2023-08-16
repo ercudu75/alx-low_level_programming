@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[])
 {
-	int op_func(int, int);
+	int a,b;
 	char s;
 
 	if (argc != 4)
@@ -12,12 +12,14 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	s = *(argv[2]);
-	if ((s == '/' || s == '%') && atoi(argv[3]) == 0 )
+	if (get_op_func(argv[2]) == NULL)
 	{
 		printf("Error\n");
-		exit(100);
+		exit(99);
 	}
-
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	s = *(argv[2]);
+	printf("%d\n", get_op_func(s,(a, b)));
 
 }
