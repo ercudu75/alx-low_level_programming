@@ -1,6 +1,3 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -25,7 +22,7 @@ int main(void)
     new->n = 9;
     new->next = head;
     head = new;
-    n = print_listint(head);
+    n = listint_len(head);
     printf("-> %lu elements\n", n);
     free(new);
     return (0);
