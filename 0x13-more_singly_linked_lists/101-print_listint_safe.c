@@ -1,4 +1,5 @@
 #include "lists.h"
+
 /**
  * print_listint_safe - prints the elements in linked list
  * @h: head of listint_t type
