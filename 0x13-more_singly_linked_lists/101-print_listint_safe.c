@@ -16,13 +16,15 @@ size_t print_listint_safe(const listint_t *h)
 		exit(98);
 	while (temp_h)
 	{
-		if (h->next == temp_h && n_nodes > 2)
+		if (n_nodes > 0 && temp_h == loop_node)
 		{
 			loop_node = temp_h;
 			printf("loop node: [%p] %d\n", (void *)loop_node, loop_node->n);
 			exit(98);
 		}
 		printf("[%p] %d\n", (void *)temp_h, temp_h->n);
+		if (n_nodes == 0)
+			loop_node = temp_h;
 		temp_h = temp_h->next;
 		n_nodes++;
 	}
