@@ -1,5 +1,9 @@
 #include "main.h"
 
+/**
+ * print_binary - Prints the binary representation of an unsigned long int
+ * @n: The number to print in binary
+ */
 void print_binary(unsigned long int n)
 {
 	if (n == 0)
@@ -9,6 +13,10 @@ void print_binary(unsigned long int n)
 
 }
 
+/**
+ * print_binary_recursive - Recursively prints the binary
+ * @n: The number to print in binary
+ */
 void print_binary_recursive(unsigned long int n)
 {
 	if (n > 1)
