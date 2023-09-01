@@ -11,7 +11,7 @@ int get_endianness(void)
 
 	/**
 	 * actually me neither i don't know what am i writing here
-	 * just check: check: https://stackoverflow.com/questions/12791864
+	 * just check: https://stackoverflow.com/questions/12791864
 	*/
 	return ((int) (((char *)&x)[0]));
 }
