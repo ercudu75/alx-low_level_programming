@@ -2,4 +2,5 @@
 
 ## Resources
 
--   [Youtube](https://www.youtube.com/watch?v=WBim3afbYQw "Youtube")
+-   [Youtube/Bitwise Operators('|'/'&'/'>>'/'<<')](https://www.youtube.com/watch?v=WBim3afbYQw "Youtube")
+-   [Youtube/Bitwise Operators XOR('^')](https://www.youtube.com/watch?v=O9VELMn3jIY&t=146s "Youtube")
