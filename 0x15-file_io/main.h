@@ -3,8 +3,14 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include<stddef.h>
+#include <unistd.h>
+#include <errno.h>
+#include <fcntl.h>
 
 
 ssize_t read_textfile(const char *filename, size_t letters);
+int _strlen(char *s);
+
 
 #endif
