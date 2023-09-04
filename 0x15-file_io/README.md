@@ -4,8 +4,10 @@
 
 **Read or watch**:
 
--   [File descriptors](https://intranet.alxswe.com/rltoken/Duva-9Fjyskt39R__Nnazg "File descriptors")
--   [C Programming in Linux Tutorial #024 - open() read() write() Functions](https://intranet.alxswe.com/rltoken/x05veqiLPSxXmJf9zTtCkQ "C Programming in Linux Tutorial #024 - open() read() write() Functions")
+-   [File descriptors](https://en.wikipedia.org/wiki/File_descriptor "File descriptors")
+-   [C Programming in Linux Tutorial #024 - fopen() fread() write Functions](https://www.youtube.com/watch?v=e-srF6c3TJ8 "C Programming in Linux Tutorial #024 - fopen() fread() write Functions")
+[Explanation of File descriptors in c](https://www.youtube.com/watch?v=-qbmY6gQYDg "File descriptors write/read")
+
 
 **man or help**:
 
