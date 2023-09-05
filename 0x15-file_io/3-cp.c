@@ -7,6 +7,7 @@
 
 void error_read(char *file);
 void error_write(char *file);
+int close_error(int fd);
 
 
 /**
@@ -57,8 +58,13 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-	close(fd_from);
-	close(fd_to);
+	if (close_error(fd_from) < 0)
+	{
+		close_error(fd_to);
+		exit(100);
+	}
+	if (close_error(fd_to) < 0)
+		exit(100);
 	return (0);
 }
 
@@ -78,4 +84,18 @@ void error_read(char *file)
 void error_write(char *file)
 {
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
+}
+/**
+ * close_error - close a file descriptor and check for a possible error.
+ * @fd: file descriptor for file to be closed.
+ * Return: 1 if fd colud be closeed, -1 if fd could not be closed.
+ */
+int close_error(int fd)
+{
+	int close_output;
+
+	close_output = close(fd);
+	if (close_output < 0)
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+	return (close_output);
 }
