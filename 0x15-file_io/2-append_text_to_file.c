@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * append_text_to_file - Appends text to the end of a file.
  * @filename: The name of the file to which text should be appended.
