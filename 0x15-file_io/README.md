@@ -6,8 +6,8 @@
 
 -   [File descriptors](https://en.wikipedia.org/wiki/File_descriptor "File descriptors")
 -   [C Programming in Linux Tutorial #024 - fopen() fread() write Functions](https://www.youtube.com/watch?v=e-srF6c3TJ8 "C Programming in Linux Tutorial #024 - fopen() fread() write Functions")
-[Explanation of File descriptors in c](https://www.youtube.com/watch?v=-qbmY6gQYDg "File descriptors write/read")
-[Input-output system calls in C | Create, Open, Close, Read, Write](https://www.geeksforgeeks.org/input-output-system-calls-c-create-open-close-read-write/ "https://www.geeksforgeeks.org/input-output-system-calls-c-create-open-close-read-write/")
+-   [Explanation of File descriptors in c](https://www.youtube.com/watch?v=-qbmY6gQYDg "File descriptors write/read")
+-   [Input-output system calls in C | Create, Open, Close, Read, Write](https://www.geeksforgeeks.org/input-output-system-calls-c-create-open-close-read-write/ "https://www.geeksforgeeks.org/input-output-system-calls-c-create-open-close-read-write/")
 
 
 **man or help**:
