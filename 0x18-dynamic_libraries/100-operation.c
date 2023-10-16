@@ -1,27 +1,41 @@
 #include "100-operation.h"
 
-int add(int i, int k)
+int add(int a, int b)
 {
-	return (i + k);
+    int res = a + b;
+    return (res);
 }
 
-int sub(int i, int k)
+int sub(int a, int b)
 {
-	return (i - k);
+    int res = a - b;
+    return (res);
 }
 
-int mul(int i, int k)
+int mul(int a, int b)
 {
-	return (i * k);
+    int res = a * b;
+    return (res);
 }
 
-int divu(int i, int k)
+int divu(int a, int b)
 {
-	return (i / k);
+    int res;
+
+    if (b == 0)
+        return(1);
+
+    res = a / b;
+    return (res);
 }
 
-
-int mod(int i, int k)
+int mod(int a, int b)
 {
-	return (i % k);
+    int res;
+
+    if (b == 0)
+        return (1);
+
+    res = a % b;
+    return (res);
 }
