@@ -2,40 +2,21 @@
 
 int add(int a, int b)
 {
-    int res = a + b;
-    return (res);
+	return (a + b);
 }
-
 int sub(int a, int b)
 {
-    int res = a - b;
-    return (res);
+	return (a - b);
 }
-
 int mul(int a, int b)
 {
-    int res = a * b;
-    return (res);
+	return (a * b);
 }
-
 int divu(int a, int b)
 {
-    int res;
-
-    if (b == 0)
-        return(1);
-
-    res = a / b;
-    return (res);
+	return (a / b);
 }
-
 int mod(int a, int b)
 {
-    int res;
-
-    if (b == 0)
-        return (1);
-
-    res = a % b;
-    return (res);
+	return (a % b);
 }
