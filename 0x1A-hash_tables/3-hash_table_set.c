@@ -1,5 +1,12 @@
 #include "hash_tables.h"
 
+/**
+ * hash_table_set - Adds an element to the hash table
+ * @ht: Hash table to add or update the key/value to
+ * @key: Key. Can not be an empty string
+ * @value: Value associated with the key. Must be duplicated. Can be an empty string
+ * Return: 1 if it succeeded, 0 otherwise
+ */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
@@ -34,6 +41,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	return (1);
 }
 
+/**
+ * ht_pair - Allocates a new hash_node_t and sets its key and value
+ * @key: Key for the new node
+ * @value: Value associated with the key
+ * Return: Pointer to the new node, or NULL if it fails
+ */
 hash_node_t *ht_pair(const char *key, const char *value)
 {
 	hash_node_t *entry = malloc(sizeof(hash_node_t));
