@@ -2,4 +2,4 @@ CC = gcc
 SRCS = main.c school.c
 
 all:
-	${CC} ${SRCS} -o school
+	$(CC) $(SRCS) -o school
